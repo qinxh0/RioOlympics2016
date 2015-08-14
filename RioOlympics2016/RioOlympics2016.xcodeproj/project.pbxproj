@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1B1FF4F1B7A0E3700B0D756 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1FF4E1B7A0E3700B0D756 /* libsqlite3.0.dylib */; };
+		A1B1FF631B7A28B300B0D756 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF591B7A28B300B0D756 /* FMDatabase.m */; };
+		A1B1FF641B7A28B300B0D756 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF5B1B7A28B300B0D756 /* FMDatabaseAdditions.m */; };
+		A1B1FF651B7A28B300B0D756 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF5D1B7A28B300B0D756 /* FMDatabasePool.m */; };
+		A1B1FF661B7A28B300B0D756 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF5F1B7A28B300B0D756 /* FMDatabaseQueue.m */; };
+		A1B1FF671B7A28B300B0D756 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF621B7A28B300B0D756 /* FMResultSet.m */; };
+		A1B1FF6E1B7A3CBF00B0D756 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF6D1B7A3CBF00B0D756 /* Events.swift */; };
+		A1B1FF701B7A3CD700B0D756 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF6F1B7A3CD700B0D756 /* Schedule.swift */; };
+		A1B1FF721B7A54C100B0D756 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF711B7A54C100B0D756 /* BaseDAO.swift */; };
+		A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF02AD1B7DE62600826BDD /* DBHelper.swift */; };
+		A1CF02C71B7DF04000826BDD /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1FF4E1B7A0E3700B0D756 /* libsqlite3.0.dylib */; };
+		A1D43A601B7AEEBA0059A235 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5E1B7AEEBA0059A235 /* create_load.sql */; };
+		A1D43A611B7AEEBA0059A235 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */; };
+		A1D43A631B7AF0E20059A235 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D43A621B7AF0E20059A235 /* EventsDAO.swift */; };
+		A1D43A731B7AF4110059A235 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5E1B7AEEBA0059A235 /* create_load.sql */; };
+		A1D43A741B7AF4130059A235 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */; };
 		A1F459211B72240F007DF525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F459201B72240F007DF525 /* AppDelegate.swift */; };
 		A1F459231B72240F007DF525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F459221B72240F007DF525 /* ViewController.swift */; };
 		A1F459261B72240F007DF525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F459241B72240F007DF525 /* Main.storyboard */; };
@@ -16,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A1D43A6E1B7AF3BC0059A235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1F459131B72240F007DF525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F4591A1B72240F007DF525;
+			remoteInfo = RioOlympics2016;
+		};
 		A1F459311B72240F007DF525 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1F459131B72240F007DF525 /* Project object */;
@@ -26,6 +49,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1B1FF4E1B7A0E3700B0D756 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A1B1FF511B7A0F3700B0D756 /* RioOlympics2016-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RioOlympics2016-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1B1FF581B7A28B300B0D756 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		A1B1FF591B7A28B300B0D756 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		A1B1FF5A1B7A28B300B0D756 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A1B1FF5B1B7A28B300B0D756 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A1B1FF5C1B7A28B300B0D756 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		A1B1FF5D1B7A28B300B0D756 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		A1B1FF5E1B7A28B300B0D756 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A1B1FF5F1B7A28B300B0D756 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A1B1FF601B7A28B300B0D756 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		A1B1FF611B7A28B300B0D756 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		A1B1FF621B7A28B300B0D756 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		A1B1FF6D1B7A3CBF00B0D756 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		A1B1FF6F1B7A3CD700B0D756 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A1B1FF711B7A54C100B0D756 /* BaseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		A1CF02AD1B7DE62600826BDD /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		A1D43A5E1B7AEEBA0059A235 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		A1D43A621B7AF0E20059A235 /* EventsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
+		A1D43A681B7AF3BC0059A235 /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D43A6B1B7AF3BC0059A235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D43A6C1B7AF3BC0059A235 /* PersistenceLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerTests.swift; sourceTree = "<group>"; };
 		A1F4591B1B72240F007DF525 /* RioOlympics2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RioOlympics2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F4591F1B72240F007DF525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1F459201B72240F007DF525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,10 +85,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A1D43A651B7AF3BC0059A235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CF02C71B7DF04000826BDD /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1F459181B72240F007DF525 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B1FF4F1B7A0E3700B0D756 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +111,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1B1FF551B7A285400B0D756 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1FF571B7A28B300B0D756 /* fmdb */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		A1B1FF561B7A285400B0D756 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1FF4E1B7A0E3700B0D756 /* libsqlite3.0.dylib */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		A1B1FF571B7A28B300B0D756 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1FF581B7A28B300B0D756 /* FMDatabase.h */,
+				A1B1FF591B7A28B300B0D756 /* FMDatabase.m */,
+				A1B1FF5A1B7A28B300B0D756 /* FMDatabaseAdditions.h */,
+				A1B1FF5B1B7A28B300B0D756 /* FMDatabaseAdditions.m */,
+				A1B1FF5C1B7A28B300B0D756 /* FMDatabasePool.h */,
+				A1B1FF5D1B7A28B300B0D756 /* FMDatabasePool.m */,
+				A1B1FF5E1B7A28B300B0D756 /* FMDatabaseQueue.h */,
+				A1B1FF5F1B7A28B300B0D756 /* FMDatabaseQueue.m */,
+				A1B1FF601B7A28B300B0D756 /* FMDB.h */,
+				A1B1FF611B7A28B300B0D756 /* FMResultSet.h */,
+				A1B1FF621B7A28B300B0D756 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		A1B1FF691B7A3B1500B0D756 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1FF711B7A54C100B0D756 /* BaseDAO.swift */,
+				A1D43A621B7AF0E20059A235 /* EventsDAO.swift */,
+				A1CF02AD1B7DE62600826BDD /* DBHelper.swift */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		A1B1FF6A1B7A3B1500B0D756 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1FF6D1B7A3CBF00B0D756 /* Events.swift */,
+				A1B1FF6F1B7A3CD700B0D756 /* Schedule.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		A1D43A5D1B7AEEBA0059A235 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				A1D43A5E1B7AEEBA0059A235 /* create_load.sql */,
+				A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */,
+			);
+			path = DBFile;
+			sourceTree = "<group>";
+		};
+		A1D43A691B7AF3BC0059A235 /* PersistenceLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1D43A6C1B7AF3BC0059A235 /* PersistenceLayerTests.swift */,
+				A1D43A6A1B7AF3BC0059A235 /* Supporting Files */,
+			);
+			path = PersistenceLayerTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		A1D43A6A1B7AF3BC0059A235 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1D43A6B1B7AF3BC0059A235 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A1F459121B72240F007DF525 = {
 			isa = PBXGroup;
 			children = (
+				A1D43A5D1B7AEEBA0059A235 /* DBFile */,
 				A1F4591D1B72240F007DF525 /* RioOlympics2016 */,
 				A1F459401B72246B007DF525 /* BusinessLogicLayer */,
 				A1F459411B722471007DF525 /* PersistenceLayer */,
+				A1B1FF561B7A285400B0D756 /* framework */,
+				A1B1FF551B7A285400B0D756 /* foundation */,
 				A1F459331B72240F007DF525 /* RioOlympics2016Tests */,
 				A1F4591C1B72240F007DF525 /* Products */,
 			);
@@ -72,6 +209,7 @@
 			children = (
 				A1F4591B1B72240F007DF525 /* RioOlympics2016.app */,
 				A1F459301B72240F007DF525 /* RioOlympics2016Tests.xctest */,
+				A1D43A681B7AF3BC0059A235 /* PersistenceLayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +230,7 @@
 		A1F4591E1B72240F007DF525 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1B1FF511B7A0F3700B0D756 /* RioOlympics2016-Bridging-Header.h */,
 				A1F4591F1B72240F007DF525 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -124,6 +263,9 @@
 		A1F459411B722471007DF525 /* PersistenceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A1B1FF691B7A3B1500B0D756 /* dao */,
+				A1B1FF6A1B7A3B1500B0D756 /* domain */,
+				A1D43A691B7AF3BC0059A235 /* PersistenceLayerTests */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";
@@ -131,6 +273,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A1D43A671B7AF3BC0059A235 /* PersistenceLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D43A701B7AF3BC0059A235 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
+			buildPhases = (
+				A1D43A641B7AF3BC0059A235 /* Sources */,
+				A1D43A651B7AF3BC0059A235 /* Frameworks */,
+				A1D43A661B7AF3BC0059A235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1D43A6F1B7AF3BC0059A235 /* PBXTargetDependency */,
+			);
+			name = PersistenceLayerTests;
+			productName = PersistenceLayerTests;
+			productReference = A1D43A681B7AF3BC0059A235 /* PersistenceLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1F4591A1B72240F007DF525 /* RioOlympics2016 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F4593A1B72240F007DF525 /* Build configuration list for PBXNativeTarget "RioOlympics2016" */;
@@ -175,6 +335,10 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = qin;
 				TargetAttributes = {
+					A1D43A671B7AF3BC0059A235 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A1F4591A1B72240F007DF525;
+					};
 					A1F4591A1B72240F007DF525 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -199,15 +363,27 @@
 			targets = (
 				A1F4591A1B72240F007DF525 /* RioOlympics2016 */,
 				A1F4592F1B72240F007DF525 /* RioOlympics2016Tests */,
+				A1D43A671B7AF3BC0059A235 /* PersistenceLayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A1D43A661B7AF3BC0059A235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D43A741B7AF4130059A235 /* DBConfig.plist in Resources */,
+				A1D43A731B7AF4110059A235 /* create_load.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1F459191B72240F007DF525 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D43A611B7AEEBA0059A235 /* DBConfig.plist in Resources */,
+				A1D43A601B7AEEBA0059A235 /* create_load.sql in Resources */,
 				A1F459261B72240F007DF525 /* Main.storyboard in Resources */,
 				A1F4592B1B72240F007DF525 /* LaunchScreen.xib in Resources */,
 				A1F459281B72240F007DF525 /* Images.xcassets in Resources */,
@@ -224,12 +400,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A1D43A641B7AF3BC0059A235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1F459171B72240F007DF525 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B1FF631B7A28B300B0D756 /* FMDatabase.m in Sources */,
 				A1F459231B72240F007DF525 /* ViewController.swift in Sources */,
+				A1B1FF671B7A28B300B0D756 /* FMResultSet.m in Sources */,
+				A1D43A631B7AF0E20059A235 /* EventsDAO.swift in Sources */,
+				A1B1FF701B7A3CD700B0D756 /* Schedule.swift in Sources */,
+				A1B1FF651B7A28B300B0D756 /* FMDatabasePool.m in Sources */,
+				A1B1FF6E1B7A3CBF00B0D756 /* Events.swift in Sources */,
 				A1F459211B72240F007DF525 /* AppDelegate.swift in Sources */,
+				A1B1FF641B7A28B300B0D756 /* FMDatabaseAdditions.m in Sources */,
+				A1B1FF661B7A28B300B0D756 /* FMDatabaseQueue.m in Sources */,
+				A1B1FF721B7A54C100B0D756 /* BaseDAO.swift in Sources */,
+				A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +437,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A1D43A6F1B7AF3BC0059A235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F4591A1B72240F007DF525 /* RioOlympics2016 */;
+			targetProxy = A1D43A6E1B7AF3BC0059A235 /* PBXContainerItemProxy */;
+		};
 		A1F459321B72240F007DF525 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1F4591A1B72240F007DF525 /* RioOlympics2016 */;
@@ -271,6 +469,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A1D43A711B7AF3BC0059A235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympics2016.app/RioOlympics2016";
+			};
+			name = Debug;
+		};
+		A1D43A721B7AF3BC0059A235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympics2016.app/RioOlympics2016";
+			};
+			name = Release;
+		};
 		A1F459381B72240F007DF525 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,9 +590,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RioOlympics2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RioOlympics2016/RioOlympics2016-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -368,9 +603,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RioOlympics2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RioOlympics2016/RioOlympics2016-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +648,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A1D43A701B7AF3BC0059A235 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D43A711B7AF3BC0059A235 /* Debug */,
+				A1D43A721B7AF3BC0059A235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1F459161B72240F007DF525 /* Build configuration list for PBXProject "RioOlympics2016" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -427,6 +673,7 @@
 				A1F4593C1B72240F007DF525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1F4593D1B72240F007DF525 /* Build configuration list for PBXNativeTarget "RioOlympics2016Tests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +682,7 @@
 				A1F4593F1B72240F007DF525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

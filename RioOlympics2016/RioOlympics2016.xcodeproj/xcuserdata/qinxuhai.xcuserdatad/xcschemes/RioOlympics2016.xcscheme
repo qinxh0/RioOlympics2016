@@ -34,6 +34,20 @@
                ReferencedContainer = "container:RioOlympics2016.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1D43A671B7AF3BC0059A235"
+               BuildableName = "PersistenceLayerTests.xctest"
+               BlueprintName = "PersistenceLayerTests"
+               ReferencedContainer = "container:RioOlympics2016.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "A1F4592F1B72240F007DF525"
                BuildableName = "RioOlympics2016Tests.xctest"
                BlueprintName = "RioOlympics2016Tests"
+               ReferencedContainer = "container:RioOlympics2016.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1D43A671B7AF3BC0059A235"
+               BuildableName = "PersistenceLayerTests.xctest"
+               BlueprintName = "PersistenceLayerTests"
                ReferencedContainer = "container:RioOlympics2016.xcodeproj">
             </BuildableReference>
          </TestableReference>
