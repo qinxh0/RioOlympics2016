@@ -13,7 +13,7 @@ let DB_FILE_NAME = "app.db"
 
 let writableDBPath = DBHelper.applicationDocumentsDirectoryFile(DB_FILE_NAME)
 
-class BaseDAO: NSObject {
+class BaseDAO :NSObject {
     
     var db:FMDatabase
     
