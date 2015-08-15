@@ -8,7 +8,7 @@
 
 import Foundation
 
-class EventsDAO :BaseDAO {
+class EventsDAO: BaseDAO {
     
     //对应表中字段
     let EVENT_ID = "EventID"

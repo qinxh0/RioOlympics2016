@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DBHelper :NSObject{
+class DBHelper: NSObject{
     
     //数据库版本号
     static let VERSION_NUMBER = "version_number"
