@@ -16,7 +16,7 @@ class Schedule: NSObject {
     //比赛时间
     var GameTime :String?
     //比赛描述
-    var GameINfo :String?
+    var GameInfo :String?
     //比赛项目
     var Event :Events?
 }

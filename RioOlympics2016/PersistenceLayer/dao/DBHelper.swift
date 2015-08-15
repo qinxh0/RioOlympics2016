@@ -10,8 +10,6 @@ import Foundation
 
 class DBHelper: NSObject{
     
-    //数据库版本号
-    static let VERSION_NUMBER = "version_number"
     
     //获得沙箱Document目录下全路径
     class func applicationDocumentsDirectoryFile(fileName: String) -> String {
@@ -24,7 +22,7 @@ class DBHelper: NSObject{
     }
     
     //获得FMDatabase
-    class func getDb()->FMDatabase{
+    class func getDb() -> FMDatabase {
 
         //取得沙箱Document目录路径
         var dbFilePath = DBHelper.applicationDocumentsDirectoryFile(DB_FILE_NAME)
@@ -32,6 +30,17 @@ class DBHelper: NSObject{
         let db = FMDatabase(path: dbFilePath)
         
         return db
+    }
+    
+    //获得FMDatabaseQueue
+    class func getQueue() -> FMDatabaseQueue {
+        
+        //取得沙箱Document目录路径
+        var dbFilePath = DBHelper.applicationDocumentsDirectoryFile(DB_FILE_NAME)
+        //创建数据库
+        let queue = FMDatabaseQueue(path: dbFilePath)
+        
+        return queue
     }
     
     //初始化并加载数据
@@ -66,8 +75,8 @@ class DBHelper: NSObject{
                 db.executeStatements(sql)
                 
                 //把当前版本号写回到文件中
-                let usql = String(format:"update  DBVersionInfo set ? = ?")
-                db.executeUpdate(usql, withArgumentsInArray: [VERSION_NUMBER,dbConfigVersion!.integerValue])
+                let usql = String(format:"update  DBVersionInfo set version_number = ?")
+                db.executeUpdate(usql, withArgumentsInArray: [dbConfigVersion!.integerValue])
                 
                 db.close()
             }
@@ -84,22 +93,22 @@ class DBHelper: NSObject{
         
         if db.open(){
             //不存在创建表
-            let sql = "create table if not exists DBVersionInfo ( ? int )"
-            db.executeUpdate(sql, withArgumentsInArray: [VERSION_NUMBER])
+            let sql = "create table if not exists DBVersionInfo (version_number int )"
+            db.executeUpdate(sql, withArgumentsInArray: nil)
             
             //执行查询
-            let qsql = "select ? from DBVersionInfo"
-            var fmRes = db.executeQuery(qsql, withArgumentsInArray: [VERSION_NUMBER])
+            let qsql = "select version_number from DBVersionInfo"
+            var fmRes = db.executeQuery(qsql, withArgumentsInArray: nil)
             
             if fmRes.next() {
                 NSLog("有数据情况")
-                versionNubmer = Int(fmRes.intForColumn(VERSION_NUMBER))
+                versionNubmer = Int(fmRes.intForColumn("version_number"))
                 
             } else {
                 NSLog("无数据情况")
                 //插入初始版本号
-                let insertSql = "insert into DBVersionInfo (?) values(?)"
-                db.executeUpdate(insertSql, withArgumentsInArray: [VERSION_NUMBER,versionNubmer])
+                let insertSql = "insert into DBVersionInfo (version_number) values(?)"
+                db.executeUpdate(insertSql, withArgumentsInArray: [versionNubmer])
             }
             
             db.close()

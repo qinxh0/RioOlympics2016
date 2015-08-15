@@ -16,11 +16,13 @@ let writableDBPath = DBHelper.applicationDocumentsDirectoryFile(DB_FILE_NAME)
 class BaseDAO: NSObject {
     
     var db:FMDatabase
+    var queue:FMDatabaseQueue
     
     override init() {
         //初始化数据库
         DBHelper.initDB()
         self.db = DBHelper.getDb()
+        self.queue = DBHelper.getQueue()
         
     }
     

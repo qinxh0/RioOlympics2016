@@ -10,15 +10,6 @@ import Foundation
 
 class EventsDAO: BaseDAO {
     
-    //对应表中字段
-    let EVENT_ID = "EventID"
-    let EVENT_NAME = "EventName"
-    let EVGENT_ICON = "EventIcon"
-    let KEY_INFO = "KeyInfo"
-    let BASICS_INFO = "BasicsInfo"
-    let OLYPIC_INFO = "OlympicInfo"
-    
-    
     class var sharedInstance: EventsDAO {
         struct Static {
             static var instance: EventsDAO?
@@ -36,13 +27,8 @@ class EventsDAO: BaseDAO {
     func create(model: Events) -> Int {
         
         if self.openDB() {
-            let sql = "INSERT INTO Events (?,?,?,?,?) VALUES (?,?,?,?,?)"
+            let sql = "INSERT INTO Events (EventName,EventIcon,KeyInfo,BasicsInfo,OlympicInfo) VALUES (?,?,?,?,?);"
             let paramList:[AnyObject] = [
-                EVENT_NAME,
-                EVGENT_ICON,
-                KEY_INFO,
-                BASICS_INFO,
-                OLYPIC_INFO,
                 model.EventName!,
                 model.EventIcon!,
                 model.KeyInfo!,
@@ -63,14 +49,25 @@ class EventsDAO: BaseDAO {
     func remove(model: Events) -> Int {
         
         if self.openDB() {
-            let sql = "DELETE  from Schedule where ?=?"
-            let paramList:[AnyObject] = [
-                EVENT_ID,
-                model.EventID!.description]
+            
+            //开始事务
+            self.db.beginTransaction()
+            
+            //删除子表Schedule数据sql
+            let delScheduleSql = "DELETE from Schedule where EventID=?;"
+            //删除父表Events数据sql
+            let delEventsSql = "DELETE from Events where EventID=?;"
+            let paramList:[AnyObject] = [model.EventID!]
             
             //执行sql
-            if !self.db.executeUpdate(sql, withArgumentsInArray:paramList) {
+            var flag1 = self.db.executeUpdate(delScheduleSql, withArgumentsInArray:paramList)
+            var flag2 = self.db.executeUpdate(delEventsSql, withArgumentsInArray:paramList)
+            
+            if !flag1 || !flag2 {
+                self.db.rollback()
                 assert(false, "删除数据失败。")
+            } else {
+                self.db.commit()
             }
             
             self.closeDB()
@@ -82,19 +79,13 @@ class EventsDAO: BaseDAO {
     func modify(model: Events) -> Int {
         
         if self.openDB() {
-            let sql = "UPDATE Events set ?=?, ?=?,?=?,?=?,?=? where ?=?"
+            let sql = "UPDATE Events set EventName=?, EventIcon=?,KeyInfo=?,BasicsInfo=?,OlympicInfo=? where EventID=?;"
             let paramList:[AnyObject] = [
-                EVENT_NAME,
                 model.EventName!,
-                EVGENT_ICON,
                 model.EventIcon!,
-                KEY_INFO,
                 model.KeyInfo!,
-                BASICS_INFO,
                 model.BasicsInfo!,
-                OLYPIC_INFO,
                 model.OlympicInfo!,
-                EVENT_ID,
                 model.EventID!]
             
             //执行sql
@@ -112,26 +103,20 @@ class EventsDAO: BaseDAO {
         var listData = NSMutableArray()
         
         if self.openDB() {
-            let sql = "SELECT ?,?,?,?,?,? FROM Events"
-            let paramList:[AnyObject] = [
-                EVENT_NAME,
-                EVGENT_ICON,
-                KEY_INFO,
-                BASICS_INFO,
-                OLYPIC_INFO,
-                EVENT_ID]
+            let sql = "SELECT EventName,EventIcon,KeyInfo,BasicsInfo,OlympicInfo,EventID FROM Events;"
+            let paramList:[AnyObject] = []
             
             //执行sql
             if var res = self.db.executeQuery(sql, withArgumentsInArray: paramList) {
                 
                 while(res.next()) {
                     
-                    var eventName = res.stringForColumn(EVENT_NAME)
-                    var eventIcon = res.stringForColumn(EVGENT_ICON)
-                    var keyInfo = res.stringForColumn(KEY_INFO)
-                    var basicsInfo = res.stringForColumn(BASICS_INFO)
-                    var olypicInfo = res.stringForColumn(OLYPIC_INFO)
-                    var eventId = Int(res.intForColumn(EVENT_ID))
+                    var eventName = res.stringForColumn("EventName")
+                    var eventIcon = res.stringForColumn("EventIcon")
+                    var keyInfo = res.stringForColumn("KeyInfo")
+                    var basicsInfo = res.stringForColumn("BasicsInfo")
+                    var olypicInfo = res.stringForColumn("OlympicInfo")
+                    var eventId = Int(res.intForColumn("EventID"))
                     
                     var events = Events()
                     events.EventName = eventName
@@ -155,28 +140,20 @@ class EventsDAO: BaseDAO {
     func findById(model: Events) -> Events? {
         
         if self.openDB() {
-            let sql = "SELECT ?,?,?,?,?,? FROM Events WHERE ?=?"
-            let paramList:[AnyObject] = [
-                EVENT_NAME,
-                EVGENT_ICON,
-                KEY_INFO,
-                BASICS_INFO,
-                OLYPIC_INFO,
-                EVENT_ID,
-                EVENT_ID,
-                model.EventID!]
+            let sql = "SELECT EventName,EventIcon,KeyInfo,BasicsInfo,OlympicInfo,EventID FROM Events WHERE EventID=?;"
+            let paramList:[AnyObject] = [model.EventID!]
             
             //执行sql
             if var res = self.db.executeQuery(sql, withArgumentsInArray: paramList) {
                 
                 while(res.next()) {
                     
-                    var eventName = res.stringForColumn(EVENT_NAME)
-                    var eventIcon = res.stringForColumn(EVGENT_ICON)
-                    var keyInfo = res.stringForColumn(KEY_INFO)
-                    var basicsInfo = res.stringForColumn(BASICS_INFO)
-                    var olypicInfo = res.stringForColumn(OLYPIC_INFO)
-                    var eventId = Int(res.intForColumn(EVENT_ID))
+                    var eventName = res.stringForColumn("EventName")
+                    var eventIcon = res.stringForColumn("EventIcon")
+                    var keyInfo = res.stringForColumn("KeyInfo")
+                    var basicsInfo = res.stringForColumn("BasicsInfo")
+                    var olypicInfo = res.stringForColumn("OlympicInfo")
+                    var eventId = Int(res.intForColumn("EventID"))
                     
                     var events = Events()
                     events.EventName = eventName
