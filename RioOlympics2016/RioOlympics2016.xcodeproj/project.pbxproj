@@ -16,7 +16,29 @@
 		A1B1FF6E1B7A3CBF00B0D756 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF6D1B7A3CBF00B0D756 /* Events.swift */; };
 		A1B1FF701B7A3CD700B0D756 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF6F1B7A3CD700B0D756 /* Schedule.swift */; };
 		A1B1FF721B7A54C100B0D756 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF711B7A54C100B0D756 /* BaseDAO.swift */; };
+		A1BBE9751B80556600D8375E /* EventsBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE9741B80556600D8375E /* EventsBLTests.swift */; };
+		A1BBE97B1B80561200D8375E /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */; };
+		A1BBE97C1B80561200D8375E /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354C11B8052390046D0F3 /* ScheduleBL.swift */; };
+		A1BBE97D1B80561200D8375E /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF711B7A54C100B0D756 /* BaseDAO.swift */; };
+		A1BBE97E1B80561200D8375E /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D43A621B7AF0E20059A235 /* EventsDAO.swift */; };
+		A1BBE97F1B80561200D8375E /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF02AD1B7DE62600826BDD /* DBHelper.swift */; };
+		A1BBE9801B80561200D8375E /* ScheduleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D51F921B7F85A400146086 /* ScheduleDAO.swift */; };
+		A1BBE9811B80561200D8375E /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF6D1B7A3CBF00B0D756 /* Events.swift */; };
+		A1BBE9821B80561200D8375E /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF6F1B7A3CD700B0D756 /* Schedule.swift */; };
+		A1BBE9831B80561200D8375E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF591B7A28B300B0D756 /* FMDatabase.m */; };
+		A1BBE9841B80561200D8375E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF5B1B7A28B300B0D756 /* FMDatabaseAdditions.m */; };
+		A1BBE9851B80561200D8375E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF5D1B7A28B300B0D756 /* FMDatabasePool.m */; };
+		A1BBE9861B80561200D8375E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF5F1B7A28B300B0D756 /* FMDatabaseQueue.m */; };
+		A1BBE9871B80561200D8375E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B1FF621B7A28B300B0D756 /* FMResultSet.m */; };
+		A1BBE9881B80561F00D8375E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1FF4E1B7A0E3700B0D756 /* libsqlite3.0.dylib */; };
+		A1BBE9891B80562600D8375E /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5E1B7AEEBA0059A235 /* create_load.sql */; };
+		A1BBE98A1B80562600D8375E /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */; };
+		A1BBE9A31B8087B700D8375E /* ScheduleBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE99C1B80876100D8375E /* ScheduleBLTests.swift */; };
+		A1BBE9A41B8088E500D8375E /* PersistenceLayerTests.xctest in Sources */ = {isa = PBXBuildFile; fileRef = A1D51F7B1B7F0B6B00146086 /* PersistenceLayerTests.xctest */; };
+		A1BBE9A51B8088E500D8375E /* BusinessLogicLayerTest.xctest in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE9701B80556600D8375E /* BusinessLogicLayerTest.xctest */; };
 		A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF02AD1B7DE62600826BDD /* DBHelper.swift */; };
+		A1D354C01B8051BA0046D0F3 /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */; };
+		A1D354C21B8052390046D0F3 /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354C11B8052390046D0F3 /* ScheduleBL.swift */; };
 		A1D43A601B7AEEBA0059A235 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5E1B7AEEBA0059A235 /* create_load.sql */; };
 		A1D43A611B7AEEBA0059A235 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */; };
 		A1D43A631B7AF0E20059A235 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D43A621B7AF0E20059A235 /* EventsDAO.swift */; };
@@ -42,18 +64,17 @@
 		A1F459261B72240F007DF525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F459241B72240F007DF525 /* Main.storyboard */; };
 		A1F459281B72240F007DF525 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F459271B72240F007DF525 /* Images.xcassets */; };
 		A1F4592B1B72240F007DF525 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F459291B72240F007DF525 /* LaunchScreen.xib */; };
-		A1F459371B72240F007DF525 /* RioOlympics2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F459361B72240F007DF525 /* RioOlympics2016Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1D51F811B7F0B6B00146086 /* PBXContainerItemProxy */ = {
+		A1BBE9761B80556600D8375E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1F459131B72240F007DF525 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A1F4591A1B72240F007DF525;
 			remoteInfo = RioOlympics2016;
 		};
-		A1F459311B72240F007DF525 /* PBXContainerItemProxy */ = {
+		A1D51F811B7F0B6B00146086 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1F459131B72240F007DF525 /* Project object */;
 			proxyType = 1;
@@ -79,7 +100,13 @@
 		A1B1FF6D1B7A3CBF00B0D756 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		A1B1FF6F1B7A3CD700B0D756 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		A1B1FF711B7A54C100B0D756 /* BaseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		A1BBE9701B80556600D8375E /* BusinessLogicLayerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BBE9731B80556600D8375E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1BBE9741B80556600D8375E /* EventsBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsBLTests.swift; sourceTree = "<group>"; };
+		A1BBE99C1B80876100D8375E /* ScheduleBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleBLTests.swift; path = ../11111/ScheduleBLTests.swift; sourceTree = "<group>"; };
 		A1CF02AD1B7DE62600826BDD /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsBL.swift; sourceTree = "<group>"; };
+		A1D354C11B8052390046D0F3 /* ScheduleBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleBL.swift; sourceTree = "<group>"; };
 		A1D43A5E1B7AEEBA0059A235 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
 		A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
 		A1D43A621B7AF0E20059A235 /* EventsDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
@@ -95,12 +122,17 @@
 		A1F459251B72240F007DF525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1F459271B72240F007DF525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1F4592A1B72240F007DF525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A1F459301B72240F007DF525 /* RioOlympics2016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RioOlympics2016Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1F459351B72240F007DF525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1F459361B72240F007DF525 /* RioOlympics2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RioOlympics2016Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A1BBE96D1B80556600D8375E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BBE9881B80561F00D8375E /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1D51F781B7F0B6B00146086 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,13 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B1FF4F1B7A0E3700B0D756 /* libsqlite3.0.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1F4592D1B72240F007DF525 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +206,25 @@
 			path = domain;
 			sourceTree = "<group>";
 		};
+		A1BBE9711B80556600D8375E /* BusinessLogicLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBE99C1B80876100D8375E /* ScheduleBLTests.swift */,
+				A1BBE9741B80556600D8375E /* EventsBLTests.swift */,
+				A1BBE9721B80556600D8375E /* Supporting Files */,
+			);
+			name = BusinessLogicLayerTests;
+			path = BusinessLogicLayerTest;
+			sourceTree = SOURCE_ROOT;
+		};
+		A1BBE9721B80556600D8375E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1BBE9731B80556600D8375E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A1D43A5D1B7AEEBA0059A235 /* DBFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +261,6 @@
 				A1F459411B722471007DF525 /* PersistenceLayer */,
 				A1B1FF561B7A285400B0D756 /* framework */,
 				A1B1FF551B7A285400B0D756 /* foundation */,
-				A1F459331B72240F007DF525 /* RioOlympics2016Tests */,
 				A1D51F7C1B7F0B6B00146086 /* PersistenceLayerTests */,
 				A1F4591C1B72240F007DF525 /* Products */,
 			);
@@ -227,8 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				A1F4591B1B72240F007DF525 /* RioOlympics2016.app */,
-				A1F459301B72240F007DF525 /* RioOlympics2016Tests.xctest */,
 				A1D51F7B1B7F0B6B00146086 /* PersistenceLayerTests.xctest */,
+				A1BBE9701B80556600D8375E /* BusinessLogicLayerTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,26 +298,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A1F459331B72240F007DF525 /* RioOlympics2016Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A1F459361B72240F007DF525 /* RioOlympics2016Tests.swift */,
-				A1F459341B72240F007DF525 /* Supporting Files */,
-			);
-			path = RioOlympics2016Tests;
-			sourceTree = "<group>";
-		};
-		A1F459341B72240F007DF525 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1F459351B72240F007DF525 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		A1F459401B72246B007DF525 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */,
+				A1D354C11B8052390046D0F3 /* ScheduleBL.swift */,
+				A1BBE9711B80556600D8375E /* BusinessLogicLayerTests */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -291,6 +320,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A1BBE96F1B80556600D8375E /* BusinessLogicLayerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1BBE97A1B80556600D8375E /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTest" */;
+			buildPhases = (
+				A1BBE96C1B80556600D8375E /* Sources */,
+				A1BBE96D1B80556600D8375E /* Frameworks */,
+				A1BBE96E1B80556600D8375E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1BBE9771B80556600D8375E /* PBXTargetDependency */,
+			);
+			name = BusinessLogicLayerTest;
+			productName = BusinessLogicLayerTest;
+			productReference = A1BBE9701B80556600D8375E /* BusinessLogicLayerTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1D51F7A1B7F0B6B00146086 /* PersistenceLayerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1D51F831B7F0B6B00146086 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
@@ -326,24 +373,6 @@
 			productReference = A1F4591B1B72240F007DF525 /* RioOlympics2016.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1F4592F1B72240F007DF525 /* RioOlympics2016Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1F4593D1B72240F007DF525 /* Build configuration list for PBXNativeTarget "RioOlympics2016Tests" */;
-			buildPhases = (
-				A1F4592C1B72240F007DF525 /* Sources */,
-				A1F4592D1B72240F007DF525 /* Frameworks */,
-				A1F4592E1B72240F007DF525 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A1F459321B72240F007DF525 /* PBXTargetDependency */,
-			);
-			name = RioOlympics2016Tests;
-			productName = RioOlympics2016Tests;
-			productReference = A1F459301B72240F007DF525 /* RioOlympics2016Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -353,16 +382,16 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = qin;
 				TargetAttributes = {
+					A1BBE96F1B80556600D8375E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = A1F4591A1B72240F007DF525;
+					};
 					A1D51F7A1B7F0B6B00146086 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = A1F4591A1B72240F007DF525;
 					};
 					A1F4591A1B72240F007DF525 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					A1F4592F1B72240F007DF525 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = A1F4591A1B72240F007DF525;
 					};
 				};
 			};
@@ -380,13 +409,22 @@
 			projectRoot = "";
 			targets = (
 				A1F4591A1B72240F007DF525 /* RioOlympics2016 */,
-				A1F4592F1B72240F007DF525 /* RioOlympics2016Tests */,
 				A1D51F7A1B7F0B6B00146086 /* PersistenceLayerTests */,
+				A1BBE96F1B80556600D8375E /* BusinessLogicLayerTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A1BBE96E1B80556600D8375E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BBE9891B80562600D8375E /* create_load.sql in Resources */,
+				A1BBE98A1B80562600D8375E /* DBConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1D51F791B7F0B6B00146086 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,16 +446,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F4592E1B72240F007DF525 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A1BBE96C1B80556600D8375E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BBE9A41B8088E500D8375E /* PersistenceLayerTests.xctest in Sources */,
+				A1BBE9A51B8088E500D8375E /* BusinessLogicLayerTest.xctest in Sources */,
+				A1BBE9A31B8087B700D8375E /* ScheduleBLTests.swift in Sources */,
+				A1BBE97B1B80561200D8375E /* EventsBL.swift in Sources */,
+				A1BBE97C1B80561200D8375E /* ScheduleBL.swift in Sources */,
+				A1BBE97D1B80561200D8375E /* BaseDAO.swift in Sources */,
+				A1BBE97E1B80561200D8375E /* EventsDAO.swift in Sources */,
+				A1BBE97F1B80561200D8375E /* DBHelper.swift in Sources */,
+				A1BBE9801B80561200D8375E /* ScheduleDAO.swift in Sources */,
+				A1BBE9811B80561200D8375E /* Events.swift in Sources */,
+				A1BBE9821B80561200D8375E /* Schedule.swift in Sources */,
+				A1BBE9831B80561200D8375E /* FMDatabase.m in Sources */,
+				A1BBE9841B80561200D8375E /* FMDatabaseAdditions.m in Sources */,
+				A1BBE9851B80561200D8375E /* FMDatabasePool.m in Sources */,
+				A1BBE9861B80561200D8375E /* FMDatabaseQueue.m in Sources */,
+				A1BBE9871B80561200D8375E /* FMResultSet.m in Sources */,
+				A1BBE9751B80556600D8375E /* EventsBLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1D51F771B7F0B6B00146086 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,38 +501,32 @@
 				A1F459231B72240F007DF525 /* ViewController.swift in Sources */,
 				A1B1FF671B7A28B300B0D756 /* FMResultSet.m in Sources */,
 				A1D43A631B7AF0E20059A235 /* EventsDAO.swift in Sources */,
+				A1D354C01B8051BA0046D0F3 /* EventsBL.swift in Sources */,
 				A1D51F931B7F85A400146086 /* ScheduleDAO.swift in Sources */,
 				A1B1FF701B7A3CD700B0D756 /* Schedule.swift in Sources */,
 				A1B1FF651B7A28B300B0D756 /* FMDatabasePool.m in Sources */,
 				A1B1FF6E1B7A3CBF00B0D756 /* Events.swift in Sources */,
 				A1F459211B72240F007DF525 /* AppDelegate.swift in Sources */,
 				A1B1FF641B7A28B300B0D756 /* FMDatabaseAdditions.m in Sources */,
+				A1D354C21B8052390046D0F3 /* ScheduleBL.swift in Sources */,
 				A1B1FF661B7A28B300B0D756 /* FMDatabaseQueue.m in Sources */,
 				A1B1FF721B7A54C100B0D756 /* BaseDAO.swift in Sources */,
 				A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1F4592C1B72240F007DF525 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1F459371B72240F007DF525 /* RioOlympics2016Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A1BBE9771B80556600D8375E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F4591A1B72240F007DF525 /* RioOlympics2016 */;
+			targetProxy = A1BBE9761B80556600D8375E /* PBXContainerItemProxy */;
+		};
 		A1D51F821B7F0B6B00146086 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1F4591A1B72240F007DF525 /* RioOlympics2016 */;
 			targetProxy = A1D51F811B7F0B6B00146086 /* PBXContainerItemProxy */;
-		};
-		A1F459321B72240F007DF525 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1F4591A1B72240F007DF525 /* RioOlympics2016 */;
-			targetProxy = A1F459311B72240F007DF525 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -501,6 +550,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A1BBE9781B80556600D8375E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusinessLogicLayerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RioOlympics2016/RioOlympics2016-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympics2016.app/RioOlympics2016";
+			};
+			name = Debug;
+		};
+		A1BBE9791B80556600D8375E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BusinessLogicLayerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RioOlympics2016/RioOlympics2016-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympics2016.app/RioOlympics2016";
+			};
+			name = Release;
+		};
 		A1D51F841B7F0B6B00146086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -645,43 +730,18 @@
 			};
 			name = Release;
 		};
-		A1F4593E1B72240F007DF525 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RioOlympics2016Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympics2016.app/RioOlympics2016";
-			};
-			name = Debug;
-		};
-		A1F4593F1B72240F007DF525 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RioOlympics2016Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RioOlympics2016.app/RioOlympics2016";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A1BBE97A1B80556600D8375E /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1BBE9781B80556600D8375E /* Debug */,
+				A1BBE9791B80556600D8375E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1D51F831B7F0B6B00146086 /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -689,6 +749,7 @@
 				A1D51F851B7F0B6B00146086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1F459161B72240F007DF525 /* Build configuration list for PBXProject "RioOlympics2016" */ = {
 			isa = XCConfigurationList;
@@ -704,15 +765,6 @@
 			buildConfigurations = (
 				A1F4593B1B72240F007DF525 /* Debug */,
 				A1F4593C1B72240F007DF525 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A1F4593D1B72240F007DF525 /* Build configuration list for PBXNativeTarget "RioOlympics2016Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1F4593E1B72240F007DF525 /* Debug */,
-				A1F4593F1B72240F007DF525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

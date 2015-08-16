@@ -62,6 +62,34 @@
                ReferencedContainer = "container:RioOlympics2016.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1BBE96F1B80556600D8375E"
+               BuildableName = "BusinessLogicLayerTest.xctest"
+               BlueprintName = "BusinessLogicLayerTest"
+               ReferencedContainer = "container:RioOlympics2016.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1BBE9971B80876100D8375E"
+               BuildableName = "11111.xctest"
+               BlueprintName = "11111"
+               ReferencedContainer = "container:RioOlympics2016.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -87,6 +115,26 @@
                BlueprintIdentifier = "A1D51F7A1B7F0B6B00146086"
                BuildableName = "PersistenceLayerTests.xctest"
                BlueprintName = "PersistenceLayerTests"
+               ReferencedContainer = "container:RioOlympics2016.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1BBE96F1B80556600D8375E"
+               BuildableName = "BusinessLogicLayerTest.xctest"
+               BlueprintName = "BusinessLogicLayerTest"
+               ReferencedContainer = "container:RioOlympics2016.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1BBE9971B80876100D8375E"
+               BuildableName = "11111.xctest"
+               BlueprintName = "11111"
                ReferencedContainer = "container:RioOlympics2016.xcodeproj">
             </BuildableReference>
          </TestableReference>
