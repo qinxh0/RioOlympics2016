@@ -33,9 +33,8 @@
 		A1BBE9881B80561F00D8375E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B1FF4E1B7A0E3700B0D756 /* libsqlite3.0.dylib */; };
 		A1BBE9891B80562600D8375E /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5E1B7AEEBA0059A235 /* create_load.sql */; };
 		A1BBE98A1B80562600D8375E /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */; };
-		A1BBE9A31B8087B700D8375E /* ScheduleBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE99C1B80876100D8375E /* ScheduleBLTests.swift */; };
-		A1BBE9A41B8088E500D8375E /* PersistenceLayerTests.xctest in Sources */ = {isa = PBXBuildFile; fileRef = A1D51F7B1B7F0B6B00146086 /* PersistenceLayerTests.xctest */; };
-		A1BBE9A51B8088E500D8375E /* BusinessLogicLayerTest.xctest in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE9701B80556600D8375E /* BusinessLogicLayerTest.xctest */; };
+		A1BBEA001B80B0AB00D8375E /* ScheduleBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE9FF1B80B0AB00D8375E /* ScheduleBLTests.swift */; };
+		A1BBEA011B80B0B600D8375E /* ScheduleBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE9FF1B80B0AB00D8375E /* ScheduleBLTests.swift */; };
 		A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF02AD1B7DE62600826BDD /* DBHelper.swift */; };
 		A1D354C01B8051BA0046D0F3 /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */; };
 		A1D354C21B8052390046D0F3 /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354C11B8052390046D0F3 /* ScheduleBL.swift */; };
@@ -103,7 +102,7 @@
 		A1BBE9701B80556600D8375E /* BusinessLogicLayerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BBE9731B80556600D8375E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1BBE9741B80556600D8375E /* EventsBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsBLTests.swift; sourceTree = "<group>"; };
-		A1BBE99C1B80876100D8375E /* ScheduleBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleBLTests.swift; path = ../11111/ScheduleBLTests.swift; sourceTree = "<group>"; };
+		A1BBE9FF1B80B0AB00D8375E /* ScheduleBLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleBLTests.swift; sourceTree = "<group>"; };
 		A1CF02AD1B7DE62600826BDD /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsBL.swift; sourceTree = "<group>"; };
 		A1D354C11B8052390046D0F3 /* ScheduleBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleBL.swift; sourceTree = "<group>"; };
@@ -209,7 +208,7 @@
 		A1BBE9711B80556600D8375E /* BusinessLogicLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1BBE99C1B80876100D8375E /* ScheduleBLTests.swift */,
+				A1BBE9FF1B80B0AB00D8375E /* ScheduleBLTests.swift */,
 				A1BBE9741B80556600D8375E /* EventsBLTests.swift */,
 				A1BBE9721B80556600D8375E /* Supporting Files */,
 			);
@@ -453,9 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BBE9A41B8088E500D8375E /* PersistenceLayerTests.xctest in Sources */,
-				A1BBE9A51B8088E500D8375E /* BusinessLogicLayerTest.xctest in Sources */,
-				A1BBE9A31B8087B700D8375E /* ScheduleBLTests.swift in Sources */,
+				A1BBEA011B80B0B600D8375E /* ScheduleBLTests.swift in Sources */,
 				A1BBE97B1B80561200D8375E /* EventsBL.swift in Sources */,
 				A1BBE97C1B80561200D8375E /* ScheduleBL.swift in Sources */,
 				A1BBE97D1B80561200D8375E /* BaseDAO.swift in Sources */,
@@ -511,6 +508,7 @@
 				A1D354C21B8052390046D0F3 /* ScheduleBL.swift in Sources */,
 				A1B1FF661B7A28B300B0D756 /* FMDatabaseQueue.m in Sources */,
 				A1B1FF721B7A54C100B0D756 /* BaseDAO.swift in Sources */,
+				A1BBEA001B80B0AB00D8375E /* ScheduleBLTests.swift in Sources */,
 				A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
