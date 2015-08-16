@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 qin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import XCTest
 
 class ScheduleBLTests: XCTestCase {

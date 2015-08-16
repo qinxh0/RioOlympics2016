@@ -125,7 +125,7 @@ class ScheduleDAO: BaseDAO {
                     schedule.Event!.EventID = eventID
 
                     
-                    listData.addObject(Schedule)
+                    listData.addObject(schedule)
                 }
             }
             

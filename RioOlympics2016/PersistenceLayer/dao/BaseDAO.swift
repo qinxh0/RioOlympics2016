@@ -39,6 +39,5 @@ class BaseDAO: NSObject {
     //关闭数据库
     func closeDB() {
         self.db.close()
-        NSLog("数据库关闭。")
     }
 }
