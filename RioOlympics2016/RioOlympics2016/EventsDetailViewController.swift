@@ -10,10 +10,23 @@ import UIKit
 
 class EventsDetailViewController: UIViewController {
 
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var keyInfo: UITextView!
+    @IBOutlet weak var BasicsInfo: UITextView!
+    @IBOutlet weak var olympicInfo: UITextView!
+    
+    var event: Events!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.eventImage.image = UIImage(named: event.EventIcon!)
+        self.eventName.text = event.EventName!
+        self.keyInfo.text = event.KeyInfo!
+        self.BasicsInfo.text = event.BasicsInfo!
+        self.olympicInfo.text = event.OlympicInfo!
+        
     }
 
     override func didReceiveMemoryWarning() {

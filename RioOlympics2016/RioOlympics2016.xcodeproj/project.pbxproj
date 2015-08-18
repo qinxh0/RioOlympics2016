@@ -78,6 +78,9 @@
 		A1BBE98A1B80562600D8375E /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1D43A5F1B7AEEBA0059A235 /* DBConfig.plist */; };
 		A1BBEAED1B8102B600D8375E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBEAEC1B8102B600D8375E /* ScheduleViewController.swift */; };
 		A1BBEAEF1B8110B300D8375E /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBEAEE1B8110B300D8375E /* CountDownViewController.swift */; };
+		A1BBEBCF1B81A34300F6D0CE /* EventsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBEBCE1B81A34300F6D0CE /* EventsViewCell.swift */; };
+		A1BBEBD11B81A36F00F6D0CE /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBEBD01B81A36F00F6D0CE /* EventsViewController.swift */; };
+		A1BBEBD31B81A50C00F6D0CE /* EventsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBEBD21B81A50C00F6D0CE /* EventsDetailViewController.swift */; };
 		A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CF02AD1B7DE62600826BDD /* DBHelper.swift */; };
 		A1D354C01B8051BA0046D0F3 /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */; };
 		A1D354C21B8052390046D0F3 /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D354C11B8052390046D0F3 /* ScheduleBL.swift */; };
@@ -190,6 +193,9 @@
 		A1BBE9741B80556600D8375E /* EventsBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsBLTests.swift; sourceTree = "<group>"; };
 		A1BBEAEC1B8102B600D8375E /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		A1BBEAEE1B8110B300D8375E /* CountDownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		A1BBEBCE1B81A34300F6D0CE /* EventsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewCell.swift; sourceTree = "<group>"; };
+		A1BBEBD01B81A36F00F6D0CE /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		A1BBEBD21B81A50C00F6D0CE /* EventsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailViewController.swift; sourceTree = "<group>"; };
 		A1CF02AD1B7DE62600826BDD /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		A1D354BF1B8051BA0046D0F3 /* EventsBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsBL.swift; sourceTree = "<group>"; };
 		A1D354C11B8052390046D0F3 /* ScheduleBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleBL.swift; sourceTree = "<group>"; };
@@ -425,6 +431,9 @@
 				A1F4591E1B72240F007DF525 /* Supporting Files */,
 				A1BBEAEC1B8102B600D8375E /* ScheduleViewController.swift */,
 				A1BBEAEE1B8110B300D8375E /* CountDownViewController.swift */,
+				A1BBEBCE1B81A34300F6D0CE /* EventsViewCell.swift */,
+				A1BBEBD01B81A36F00F6D0CE /* EventsViewController.swift */,
+				A1BBEBD21B81A50C00F6D0CE /* EventsDetailViewController.swift */,
 			);
 			path = RioOlympics2016;
 			sourceTree = "<group>";
@@ -677,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B1FF631B7A28B300B0D756 /* FMDatabase.m in Sources */,
+				A1BBEBD11B81A36F00F6D0CE /* EventsViewController.swift in Sources */,
 				A1F459231B72240F007DF525 /* ViewController.swift in Sources */,
 				A1BBEAED1B8102B600D8375E /* ScheduleViewController.swift in Sources */,
 				A1B1FF671B7A28B300B0D756 /* FMResultSet.m in Sources */,
@@ -687,9 +697,11 @@
 				A1B1FF701B7A3CD700B0D756 /* Schedule.swift in Sources */,
 				A1B1FF651B7A28B300B0D756 /* FMDatabasePool.m in Sources */,
 				A1B1FF6E1B7A3CBF00B0D756 /* Events.swift in Sources */,
+				A1BBEBD31B81A50C00F6D0CE /* EventsDetailViewController.swift in Sources */,
 				A1F459211B72240F007DF525 /* AppDelegate.swift in Sources */,
 				A1B1FF641B7A28B300B0D756 /* FMDatabaseAdditions.m in Sources */,
 				A1D354C21B8052390046D0F3 /* ScheduleBL.swift in Sources */,
+				A1BBEBCF1B81A34300F6D0CE /* EventsViewCell.swift in Sources */,
 				A1B1FF661B7A28B300B0D756 /* FMDatabaseQueue.m in Sources */,
 				A1B1FF721B7A54C100B0D756 /* BaseDAO.swift in Sources */,
 				A1CF02AE1B7DE62600826BDD /* DBHelper.swift in Sources */,
